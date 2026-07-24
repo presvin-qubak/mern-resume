@@ -1,0 +1,169 @@
+.resume-section {
+
+    padding:80px 60px;
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+/* Resume Box */
+
+.resume-box {
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.4s ease;
+
+}
+
+
+
+/* Card Hover */
+
+.resume-box:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(34,197,94,0.2);
+
+}
+
+
+
+/* Heading */
+
+.resume-box h2 {
+
+    font-size:40px;
+
+    color:#22c55e;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* Paragraph */
+
+.resume-box p {
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+    margin:20px 0;
+
+    font-size:17px;
+
+}
+
+
+
+/* Download Button */
+
+.download-btn {
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+
+}
+
+
+
+/* Button Hover */
+
+.download-btn:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(34,197,94,0.5);
+
+}
+
+
+
+/* Button Click */
+
+.download-btn:active {
+
+    transform:scale(0.95);
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+.resume-section{
+
+    padding:50px 20px;
+
+}
+
+
+.resume-box{
+
+    padding:30px;
+
+}
+
+
+.resume-box h2{
+
+    font-size:32px;
+
+}
+
+
+.resume-box p{
+
+    font-size:15px;
+
+}
+
+
+.download-btn{
+
+    width:100%;
+
+}
+
+
+}
