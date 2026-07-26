@@ -13,7 +13,7 @@ const Projects = () => {
       description:
       "A full-stack grocery shopping application with product listing, cart system and user authentication.",
       tech:"React, Node.js, Express, MongoDB",
-      image:"/grocery.jpeg"
+      image: `${import.meta.env.BASE_URL}grocery.jpeg`
     },
 
 
@@ -22,7 +22,7 @@ const Projects = () => {
       description:
       "A hotel booking platform with room management and booking features.",
       tech:"React, Express, MongoDB",
-      image:"/hotel.jpeg"
+      image: `${import.meta.env.BASE_URL}hotel.jpeg`
     },
 
 
@@ -31,7 +31,7 @@ const Projects = () => {
       description:
       "A modern responsive coffee shop website with menu and order sections.",
       tech:"React, CSS",
-      image:"/coffee.jpeg"
+      image: `${import.meta.env.BASE_URL}coffee.jpeg`
     }
 
   ];
