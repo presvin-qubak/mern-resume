@@ -84,26 +84,20 @@ Contact
 
 
 <li>
-
-<button
-
-className="resume"
-
-onClick={()=>{
-
-window.open("/Presvin_Resume.pdf","_blank");
-
-closeMenu();
-
-}}
-
->
-
-Resume
-
-</button>
-
-
+    <a
+        href={`${import.meta.env.BASE_URL}Presvin_ReactJS_Dev_1y_260726_190420_260726_192100.pdf`}
+        download
+        style={{textDecoration: 'none'}}
+    >
+        <button
+            className="resume"
+            onClick={() => {
+                closeMenu();
+            }}
+        >
+            Resume
+        </button>
+    </a>
 </li>
 
 

@@ -112,7 +112,7 @@ const Resume = () => {
 
         <motion.a
 
-          href="/Presvin_Resume.pdf"
+          href={`${import.meta.env.BASE_URL}Presvin_ReactJS_Dev_1y_260726_190420_260726_192100.pdf`}
 
           download
 
