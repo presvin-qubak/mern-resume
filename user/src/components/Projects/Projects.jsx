@@ -9,20 +9,24 @@ const Projects = () => {
   const projects = [
 
     {
-      title:"Grocery E-Commerce App",
+      title:"FreshNest E-Commerce website",
       description:
       "A full-stack grocery shopping application with product listing, cart system and user authentication.",
       tech:"React, Node.js, Express, MongoDB",
-      image: `${import.meta.env.BASE_URL}grocery.jpeg`
+      image: `${import.meta.env.BASE_URL}grocery.jpeg`,
+      link:"https://github.com/presvin-qubak/FreshNest123",
+      "livedemo": "https://presvin-qubak.github.io/FreshNest123/"
     },
 
 
     {
-      title:"Hotel Booking App",
+      title:"Hotel Booking website",
       description:
       "A hotel booking platform with room management and booking features.",
       tech:"React, Express, MongoDB",
-      image: `${import.meta.env.BASE_URL}hotel.jpeg`
+      image: `${import.meta.env.BASE_URL}hotel.jpeg`,
+      link:"https://github.com/presvin-qubak/hotel",
+      "livedemo": "https://presvin-qubak.github.io/hotel/"
     },
 
 
@@ -31,7 +35,9 @@ const Projects = () => {
       description:
       "A modern responsive coffee shop website with menu and order sections.",
       tech:"React, CSS",
-      image: `${import.meta.env.BASE_URL}coffee.jpeg`
+      image: `${import.meta.env.BASE_URL}coffee.jpeg`,
+      link:"https://github.com/presvin-qubak/coffee_shop",
+      "livedemo": "https://presvin-qubak.github.io/coffee_shop/"
     }
 
   ];
@@ -221,7 +227,7 @@ const Projects = () => {
 
               <div className="project-buttons">
 
-
+              <a href={project.livedemo} target="_blank" rel="noopener noreferrer">
                 <motion.button
 
                   whileHover={{
@@ -238,27 +244,29 @@ const Projects = () => {
 
                 </motion.button>
 
+              </a>
 
 
 
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <motion.button
 
-                <motion.button
+                    className="github"
 
-                  className="github"
+                    whileHover={{
+                      scale:1.05
+                    }}
 
-                  whileHover={{
-                    scale:1.05
-                  }}
+                    whileTap={{
+                      scale:0.95
+                    }}
 
-                  whileTap={{
-                    scale:0.95
-                  }}
+                  >
 
-                >
+                    GitHub
 
-                  GitHub
-
-                </motion.button>
+                  </motion.button>
+                </a>
 
 
 
