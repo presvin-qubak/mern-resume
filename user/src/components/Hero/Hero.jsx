@@ -128,7 +128,7 @@ const Hero = () => {
 
         <motion.img
 
-          src="/profile.jpeg"
+          src={`${import.meta.env.BASE_URL}profile.jpeg`}
 
           alt="profile"
 
