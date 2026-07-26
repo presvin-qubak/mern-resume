@@ -88,7 +88,12 @@ const Hero = () => {
         >
 
 
-          <button>
+          <button
+            onClick={() => {
+              const el = document.getElementById('projects');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
 
             View Projects
 
@@ -96,11 +101,17 @@ const Hero = () => {
 
 
 
-          <button className="resume-btn">
+          
 
-            Download Resume
-
-          </button>
+          {/* Download resume from project `docs` folder (served at site root) */}
+          {/* Uses absolute origin so it works in production on GitHub Pages */}
+          <a
+            href={`${import.meta.env.BASE_URL}Presvin_ReactJS_Dev_1y_260726_190420_260726_192100.pdf`}
+            download
+            style={{textDecoration:'none'}}
+          >
+            <button className="resume-btn">Download Resume</button>
+          </a>
 
 
         </motion.div>

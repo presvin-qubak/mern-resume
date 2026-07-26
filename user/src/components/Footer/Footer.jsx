@@ -23,17 +23,17 @@ const Footer = () => {
       <div className="social-links">
 
 
-        <a href="#">
+        <a href="https://github.com/presvin-qubak/" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
 
 
-        <a href="#">
+        {/* <a href="#">
           LinkedIn
-        </a>
+        </a> */}
 
 
-        <a href="#">
+        <a href="mailto:presvin10@gmail.com">
           Email
         </a>
 
