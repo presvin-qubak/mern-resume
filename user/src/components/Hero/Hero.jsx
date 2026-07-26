@@ -126,17 +126,21 @@ const Hero = () => {
       >
 
 
-        <motion.img
-
-          src={`${window.location.origin}${import.meta.env.BASE_URL}profile.jpeg`}
-
-          alt="profile"
-
-          whileHover={{scale:1.05}}
-
-          transition={{duration:0.3}}
-
-        />
+        {/** debug: show resolved image URL so you can open it in browser */}
+        {(() => {
+          const imgSrc = `${import.meta.env.BASE_URL}profile.jpeg`;
+          return (
+            <>
+              <motion.img
+                src={imgSrc}
+                alt="profile"
+                whileHover={{scale:1.05}}
+                transition={{duration:0.3}}
+              />
+              <p style={{fontSize:'12px',color:'#666',marginTop:'8px'}}>Image URL: {imgSrc}</p>
+            </>
+          );
+        })()}
 
 
       </motion.div>
