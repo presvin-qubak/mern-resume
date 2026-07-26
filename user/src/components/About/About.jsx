@@ -61,7 +61,7 @@ const About = () => {
 
           <img
 
-            src="/profile.jpeg"
+            src={`${import.meta.env.BASE_URL}profile.jpeg`}
 
             alt="profile"
 
